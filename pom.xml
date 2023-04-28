@@ -5,6 +5,10 @@
   <artifactId>Course3_JDBC</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
   <name>Course3_JDBC Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
