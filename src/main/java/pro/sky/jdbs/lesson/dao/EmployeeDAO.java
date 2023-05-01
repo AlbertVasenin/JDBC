@@ -1,18 +1,16 @@
 package pro.sky.jdbs.lesson.dao;
-
-import java.sql.SQLException;
 import java.util.List;
-import pro.sky.jdbs.lesson.employee.Employee;
+import pro.sky.jdbs.lesson.model.Employee;
 
 public interface EmployeeDAO {
 
-  void createEmployee(Employee employee) throws SQLException;
+  Integer addEmployee(Employee employee);
 
-  Employee getEmployeeByID(int id) throws SQLException;
+  Employee getEmployeeByID(int id);
 
-  List<Employee> readAll() throws SQLException;
+  List<Employee> readAll();
 
-  void updateEmployeeById(Employee employee, int id) throws SQLException;
+  void updateEmployeeById(Employee employee, int id);
 
-  void deleteEmployeeById(int id) throws SQLException;
+  void deleteEmployeeById(int id);
 }

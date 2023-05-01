@@ -1,11 +1,8 @@
 package pro.sky.jdbs.lesson.dao;
-
-import java.sql.SQLException;
-import pro.sky.jdbs.lesson.city.City;
+import pro.sky.jdbs.lesson.model.City;
 
 public interface CityDAO {
 
-  City getCityByID(int id) throws SQLException;
+  City getCityById(int id);
 
-  int getCityIDByName(String name) throws SQLException;
 }
