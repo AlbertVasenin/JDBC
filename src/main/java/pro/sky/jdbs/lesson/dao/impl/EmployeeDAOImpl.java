@@ -47,7 +47,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
     try (Session session = getSession().openSession()) {
       Transaction transaction = session.beginTransaction();
       employee.setId(id);
-      session.update(employee);
+      session.merge(employee);
       transaction.commit();
     }
   }
